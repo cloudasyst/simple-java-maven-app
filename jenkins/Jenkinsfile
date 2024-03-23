@@ -23,12 +23,17 @@ pipeline {
         }
         stage('Complete') {
             steps {
-                echo 'completed-again'
+                echo 'completed-1'
             }
         }
        stage('Complete 2') {
             steps {
-                echo 'completed-again'
+                echo 'completed-2'
+            }
+        }
+       stage('Complete 3') {
+            steps {
+                echo 'completed-3'
             }
         }
     }
