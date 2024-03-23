@@ -26,11 +26,6 @@ pipeline {
                 echo 'completed-again'
             }
         }
-                stage('Complete 2') {
-            steps {
-                echo 'completed-again'
-            }
-        }
 
     }
 }
