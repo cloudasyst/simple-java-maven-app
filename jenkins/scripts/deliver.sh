@@ -24,3 +24,11 @@ echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 java -jar target/${NAME}-${VERSION}.jar
+# Debugging: Print the values of ${NAME} and ${VERSION}
+echo "NAME: ${NAME}"
+echo "VERSION: ${VERSION}"
+
+# Run the Java application
+set -x
+java -jar target/${NAME}-${VERSION}.jar
+set +x
